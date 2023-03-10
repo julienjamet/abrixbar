@@ -1,0 +1,55 @@
+@keyframes appear {
+    0% {
+        opacity: 0;
+        letter-spacing: 0px;
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: 5px;
+    }
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-2;
+    height: 250px;
+    width: 100vw;
+    border-top: 2px solid $color-1;
+
+    h1 {
+        color: $color-3;
+        animation: appear 1500ms forwards;
+    }
+}
+
+.presentation {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 120px 0;
+    
+    .text {
+        width: 50%;
+        flex-direction: column;
+        text-align: justify;
+
+        h2 {
+            text-align: center;
+            margin-top: 0px;
+            color: $color-2;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 60px;
+        }
+    }
+
+    img {
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+    
+}

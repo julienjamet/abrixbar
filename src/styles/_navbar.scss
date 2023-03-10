@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+    padding: 0 100px;
+
+    a {
+        transition: all 800ms ease-out;
+        border-top: 1px solid $color-3;
+        border-bottom: 1px solid $color-3;
+        margin: 0;
+        h4 {
+            margin: 3px;
+        }
+        &:hover {
+            color: $color-2;
+            border-color: $color-2;
+        }
+    }
+
+    .active {
+        color: $color-2;
+
+        &:hover {
+            border-color: $color-3;
+        }
+    }
+}

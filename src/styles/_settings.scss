@@ -1,0 +1,23 @@
+$color-1 : rgb(90, 90, 90);
+$color-2 : rgb(107, 21, 21);
+$color-3 : rgb(222, 222, 212);
+$police-1 : Arial, Helvetica, sans-serif;
+
+body {
+    background-color: $color-3;
+    font-family: $police-1;
+    color: $color-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        color: $color-1;
+        text-decoration: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+}

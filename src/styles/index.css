@@ -1,0 +1,134 @@
+body {
+  background-color: rgb(222, 222, 212);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(90, 90, 90);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body a {
+  color: rgb(90, 90, 90);
+  text-decoration: none;
+}
+body .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+  padding: 0 100px;
+}
+.navbar a {
+  transition: all 800ms ease-out;
+  border-top: 1px solid rgb(222, 222, 212);
+  border-bottom: 1px solid rgb(222, 222, 212);
+  margin: 0;
+}
+.navbar a h4 {
+  margin: 3px;
+}
+.navbar a:hover {
+  color: rgb(107, 21, 21);
+  border-color: rgb(107, 21, 21);
+}
+.navbar .active {
+  color: rgb(107, 21, 21);
+}
+.navbar .active:hover {
+  border-color: rgb(222, 222, 212);
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    letter-spacing: 0px;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 5px;
+  }
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(107, 21, 21);
+  height: 250px;
+  width: 100vw;
+  border-top: 2px solid rgb(90, 90, 90);
+}
+.banner h1 {
+  color: rgb(222, 222, 212);
+  animation: appear 1500ms forwards;
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 120px 0;
+}
+.presentation .text {
+  width: 50%;
+  flex-direction: column;
+  text-align: justify;
+}
+.presentation .text h2 {
+  text-align: center;
+  margin-top: 0px;
+  color: rgb(107, 21, 21);
+}
+.presentation .text h3 {
+  text-align: center;
+  margin-top: 60px;
+}
+.presentation img {
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.season {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+}
+.season .month {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(90, 90, 90);
+}
+.season .month h2 {
+  color: rgb(107, 21, 21);
+}
+.season .month .programmation {
+  display: flex;
+  justify-content: space-around;
+}
+.season .month .programmation img {
+  border-radius: 20px;
+  border: 1px solid rgb(90, 90, 90);
+  transition: all 400ms;
+}
+.season .month .programmation img:hover {
+  box-shadow: 2px 2px 10px rgb(90, 90, 90), -2px -2px 10px rgb(90, 90, 90);
+}
+.season .month .programmation figcaption {
+  margin-top: 10px;
+}
+.season .month .programmation figcaption a {
+  color: rgb(107, 21, 21);
+  font-weight: bold;
+}
+.season .month .programmation figcaption a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=index.css.map */
