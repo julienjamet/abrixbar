@@ -1,0 +1,61 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0;
+    
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin-top: 50px;
+
+        h2 {
+            color: $color-2;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
+
+            div:nth-child(2) {
+                margin-right: -80px;
+            }
+    
+            h3 {
+                text-align: left;
+                margin-top: 60px;
+                &:nth-child(3) {
+                    margin-top: 40px;
+                }
+            }
+
+            .season {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                width: 300px;
+                height: 80px;
+                &:nth-child(2) {
+                    margin-top: -20px;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    img {
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+    
+}

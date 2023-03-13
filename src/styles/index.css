@@ -17,10 +17,10 @@ body .logo {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin: 40px 0;
-  padding: 0 100px;
+  width: 100vw;
 }
 .navbar a {
   transition: all 800ms ease-out;
@@ -131,4 +131,89 @@ body .logo {
 }
 .season .month .programmation figcaption a:hover {
   text-decoration: underline;
+}
+
+.cantine {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 120px 0;
+}
+.cantine .text {
+  width: 50%;
+  flex-direction: column;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+.cantine .text h2 {
+  text-align: center;
+  margin-top: 0px;
+  color: rgb(107, 21, 21);
+}
+.cantine .text h3 {
+  text-align: center;
+  margin-top: 60px;
+}
+.cantine .images {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+.cantine .images img {
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+}
+.contact .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-top: 50px;
+}
+.contact .text h2 {
+  color: rgb(107, 21, 21);
+}
+.contact .text .main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+}
+.contact .text .main div:nth-child(2) {
+  margin-right: -80px;
+}
+.contact .text .main h3 {
+  text-align: left;
+  margin-top: 60px;
+}
+.contact .text .main h3:nth-child(3) {
+  margin-top: 40px;
+}
+.contact .text .main .season {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 300px;
+  height: 80px;
+}
+.contact .text .main .season:nth-child(2) {
+  margin-top: -20px;
+}
+.contact .text .main .season p {
+  margin: 0;
+}
+.contact img {
+  margin-top: 20px;
+  border-radius: 20px;
 }/*# sourceMappingURL=index.css.map */
